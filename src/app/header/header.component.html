@@ -1,0 +1,14 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <!-- <a router-link="/detail" routerLinkActive="active"(click)="click()">Electronics </a>
+  <a router-link="/detail" routerLinkActive="active"(click)="click()">Fashion</a>
+  <a router-link="/detail" routerLinkActive="active"(click)="click()">Beauty</a>
+  <a router-link="/detail" routerLinkActive="active"(click)="click()">Furniture</a>
+  <a router-link="/detail" routerLinkActive="active"(click)="click()">Toys</a> -->
+  <a *ngFor="let category of cArray" (click)="setCategory(category)">{{category}}</a>
+</div>
+<div class="header">
+
+  <span id="logo" style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;Flipkart</span><br>
+  
+</div>
